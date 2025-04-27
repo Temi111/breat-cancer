@@ -8,7 +8,7 @@ import joblib
 def return_prediction(model,scaler,sample_json):
     
     # For larger data features, you should probably write a for loop
-    # That builds out this array for you
+    # They builds out this array for you
     
     s_len = sample_json['sepal_length']
     s_wid = sample_json['sepal_width']
