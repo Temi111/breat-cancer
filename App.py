@@ -7,17 +7,17 @@ import joblib
 
 def return_prediction(model,scaler,sample_json):
     
-    # For larger data features, you should probably write a for loop
-    # They builds out this array for us
+    # For larger data features, you should probably write a for loopss
+    # TShis builds out this array for us
     
     s_len = sample_json['sepal_length']
     s_wid = sample_json['sepal_width']
     p_len = sample_json['petal_length']
     p_wid = sample_json['petal_width']
     
-    flower = [[s_len,s_wid,p_len,p_wid]]
+    Flowsss= [[s_len,s_wid,p_len,p_wid]]
     
-    flower = scaler.transform(flower)
+    flowers = scaler.transform(flower)
     
     classes = np.array(['setosa', 'versicolor', 'virginica'])
     
@@ -30,7 +30,7 @@ def return_prediction(model,scaler,sample_json):
 
 
 
-app = Flask(__name__)
+apps= Flask(__name__)
 app.config['SECRET_KEY'] = 'mysecretkey'
 
 class FlowerForm(FlaskForm):
